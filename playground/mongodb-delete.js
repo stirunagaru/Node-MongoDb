@@ -22,14 +22,13 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db)=>{
     });
 
 //find One and delete
-
   db.collection('Todoslist').findOneAndDelete({
     completed:false
   }).then((result)=>{
     console.log(result);
   });
 
-  //deletemany - deletes all with the same text:''
+//deletemany - deletes all with the same text:''
       db.collection('userlist').deleteMany({
         name:'sumanjali Tirunagaru'
       }).then((result)=>{
