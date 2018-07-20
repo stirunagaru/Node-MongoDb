@@ -7,7 +7,7 @@ mongoose.Promise = global.Promise;
 //||'mongodb://localhost:27017/TodoApp'
 mongoose.connect(process.env.MONGODB_URI, (err)=>{
   if(err){
-      console.log('CONNECTION ERROR:', err);
+    //  console.log('CONNECTION ERROR:', err);
     }
     console.log('CONNECTED to DB!');
 });
